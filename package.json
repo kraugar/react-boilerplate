@@ -42,7 +42,8 @@
     "add-webpack": "sudo yarn add --dev webpack && yarn add-webpack-css-loaders && yarn add-webpack-loaders && yarn add-webpack-dev",
     "remove-modules": "sudo rm -rf node_modules",
     "init-modules": "yarn add-global-modules && yarn add-express && yarn add-react && yarn add-eslint && yarn add-stylelint && yarn add-babel && yarn add-webpack",
-    "clear": "yarn remove-build && yarn remove-modules"
+    "clear": "yarn remove-build && yarn remove-modules",
+    "git-credentials": "git config credential.helper store"
   },
   "dependencies": {},
   "devDependencies": {}
