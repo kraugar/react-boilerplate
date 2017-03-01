@@ -1,0 +1,37 @@
+{
+    "env": {
+        // Development
+        "development": {
+            "presets": [
+                "flow",
+                "stage-2"
+            ],
+            "sourceMaps": true
+        },
+        // src/client/*
+        "client": {
+            "plugins": [
+                "transform-runtime"
+            ],
+            "presets": [
+                "latest",
+                "flow",
+                "react",
+                "stage-2"
+            ]
+            //"sourceMaps": true TODO: need here or in webpack?
+            //"comments": false TODO: need here or in webpack?
+        },
+        // src/server/*
+        "server": {
+            "plugins": [
+                "transform-runtime"
+            ],
+            "presets": [
+                "flow",
+                "stage-2"
+            ],
+            "comments": true
+        }
+    }
+}
