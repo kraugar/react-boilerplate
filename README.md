@@ -9,14 +9,30 @@
 - Ready for development and production!
 
 **How to start?**
-- Install -> [Node.js](https://nodejs.org/en/download)
-- Install -> [Yarn](https://yarnpkg.com/en/docs/install)
-- Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
-- Go to the directory where you downloaded the project
-- Install all needed packages -> `yarn init-packages`
-- Launch development server -> `yarn dev`
-- That's it, you're ready to develop apps faster than ever before!
-- *Not necessary, but you can configure package.json, src/assets/humans.txt and remove README.md*
+1. Install -> [Node.js](https://nodejs.org/en/download)
+2. Install -> [Yarn](https://yarnpkg.com/en/docs/install)
+3. Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
+4. Go to the directory where you downloaded the project
+5. Install all needed packages -> `yarn init-packages`
+6. Launch development server -> `yarn dev`
+7. That's it, you're ready to develop apps faster than ever before!
+8. *Not necessary, but you can configure package.json, src/assets/humans.txt and remove README.md*
+
+**Project structure:**
+- .vscode - TODO
+- build - TODO
+- node_modules - TODO
+- src/assets - TODO
+- src/client - TODO
+- src/server - TODO
+- webpack - TODO
+- .babelrc - TODO
+- .eslintrc.json - TODO
+- .flowconfig - TODO
+- .gitignore - TODO
+- .stylelintrc.json - TODO
+- package.json - TODO
+- README.md - TODO
 
 **Commands:**
 - `dev` - launch development server with Hot Reload (server & client) and debug enabled (port 5858)
