@@ -1,4 +1,4 @@
-# React Boilerplate 
+# React Boilerplate
 
 **Features:**
 - Node.js for back-end and React for front-end
@@ -11,6 +11,7 @@
 **Before starting:**
 - Install -> [Node.js](https://nodejs.org/en/download)
 - Install -> [Yarn](https://yarnpkg.com/en/docs/install)
+- Clone or download project with git -> https://github.com/svipben/react-boilerplate.git
 - Install all needed packages -> `yarn init-packages`
 - Launch development server -> `yarn dev`
 - That's it, you're ready to develop apps faster than ever before!
@@ -58,9 +59,9 @@
 - *For more information read package.json*
 
 **[Visual Studio Code](https://code.visualstudio.com):**
+- Use this project with VS Code for best development experience
 - VS Code is free, open source and runs everywhere!
 - VS Code have syntax highlighting and autocomplete
 - VS Code have git built-in
 - VS Code have a lot of extensions to increase your productivity
-- Easily debug your app right from editor by setting breakpoints and pressing F5
-- Use this project with VS Code for best development experience
+- Easily debug your app right from editor by setting breakpoints and by pressing F5
