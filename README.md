@@ -4,8 +4,8 @@
 - Node.js for back-end and React for front-end
 - Made structure which fits small, medium or large project
 - Includes a lot of ready to use commands for better development and production
-- Configured ESLint & stylelint for better code analysis
-- Hot Reload (server and client), forget about F5!
+- Configured ESLint and stylelint for better code analysis
+- Hot Reload (server & client), forget about F5!
 - Ready for development and production!
 
 **Used global packages:**
@@ -31,13 +31,13 @@
 - That's it, you're ready to develop apps faster than ever before!
 
 **Commands:**
-- `dev` - launch development server with Hot Reload (server and client) and debug enabled (port 5858)
-- `dev-cluster` - launch development server with Hot Reload (server and client) and cluster mode and debug enabled (port 5858)
-- `dev-babel-node` - launch development server with Hot Reload (client only)
+- `dev` - launch development server with Hot Reload (server & client) and debug enabled (port 5858)
+- `dev-cluster` - launch development server with Hot Reload (server & client), cluster mode and debug enabled (port 5858)
+- `dev-babel-node` - launch development server with Hot Reload (client only) and debug enabled (port 5858)
 - `prod` - launch production server with pm2
 - `prod-cluster` - launch production server with cluster mode
-- `prod-debug` - launch production server with Hot Reload (server and client) and debug enabled (port 5858)
-- `prod-debug-cluster` - launch production server with Hot Reload (server and client) and cluster mode and debug enabled (port 5858)
+- `prod-debug` - launch production server with Hot Reload (server & client) and debug enabled (port 5858)
+- `prod-debug-cluster` - launch production server with Hot Reload (server & client), cluster mode and debug enabled (port 5858)
 - `prod-node` - launch production server with node
 - `prod-babel-node` - launch production server with babel-node
 - `pm2-show-logs` - display all pm2 logs
