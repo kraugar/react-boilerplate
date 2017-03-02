@@ -25,7 +25,7 @@
     "dev": "yarn pm2-stop && yarn pm2-clear-logs && yarn pm2-dev && yarn pm2-show-logs",
     "pm2-dev-cluster": "sudo pm2 start src/server/server.js -i 0 --watch --env development --node-args=\"--debug=5858\" --log-date-format=\"YYYY-MM-DD HH:mm:ss\" --interpreter babel-node",
     "dev-cluster": "yarn pm2-stop && yarn pm2-clear-logs && yarn pm2-dev-cluster && yarn pm2-show-logs",
-    "dev-babel-node": "NODE_ENV=development babel-node --debug src/server/server.js",
+    "dev-babel-node": "NODE_ENV=development babel-node --debug=5858 src/server/server.js",
     "pm2-prod": "sudo pm2 start build/server/server.js --env production --log-date-format=\"YYYY-MM-DD HH:mm:ss\"",
     "prod": "yarn pm2-stop && yarn build-server && yarn pm2-clear-logs && yarn pm2-prod && yarn pm2-show-logs",
     "pm2-prod-cluster": "sudo pm2 start build/server/server.js -i 0 --env production --log-date-format=\"YYYY-MM-DD HH:mm:ss\"",

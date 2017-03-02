@@ -1,4 +1,4 @@
-# React Boilerplate
+# React Boilerplate (still need to finish)
 
 **Features:**
 - Node.js for back-end and React for front-end
@@ -11,7 +11,7 @@
 **Before starting:**
 - Install -> [Node.js](https://nodejs.org/en/download)
 - Install -> [Yarn](https://yarnpkg.com/en/docs/install)
-- Clone or download project with git -> https://github.com/svipben/react-boilerplate.git
+- Clone project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
 - Install all needed packages -> `yarn init-packages`
 - Launch development server -> `yarn dev`
 - That's it, you're ready to develop apps faster than ever before!
