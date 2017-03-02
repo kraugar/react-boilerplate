@@ -26,9 +26,9 @@
 - `prod-debug-cluster` - launch production server with Hot Reload (server & client), cluster mode and debug enabled (port 5858)
 - `prod-node` - launch production server with node
 - `prod-babel-node` - launch production server with babel-node
+- `stop` - remove all processes from pm2 list
 - `pm2-show-logs` - display all pm2 logs
 - `pm2-clear-logs` - empty all pm2 logs
-- `stop` - remove all processes from pm2 list
 - `pm2-list` - display all pm2 processes status
 - `pm2-monit` - monitor all pm2 processes
 - `pm2-update` - update pm2
