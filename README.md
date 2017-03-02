@@ -8,21 +8,6 @@
 - Hot Reload (server & client), forget about F5!
 - Ready for development and production!
 
-**Used global packages:**
-- [PM2](http://pm2.keymetrics.io) - process manager
-- [Flow](https://flowtype.org) - JavaScript type checker
-- [Babel](http://babeljs.io) - JavaScript compiler
-- *For more information read package.json*
-
-**Used local packages:**
-- [Express](http://expressjs.com/) - web framework for Node.js
-- [React](https://facebook.github.io/react) - UI
-- [ESLint](http://eslint.org) - JavaScript and JSX linter
-- [stylelint](https://stylelint.io) - CSS linter
-- [Babel](http://babeljs.io) - JavaScript compiler
-- [Webpack](https://webpack.js.org) - module bundler
-- *For more information read package.json*
-
 **Before starting:**
 - Install -> [Node.js](https://nodejs.org/en/download)
 - Install -> [Yarn](https://yarnpkg.com/en/docs/install)
@@ -56,3 +41,26 @@
 - `clear` - remove build & node_modules folder
 - `git-credentials` - store git credentials on disk
 - *Remember all commands starts with __yarn__! For more information read package.json*
+
+**Used global packages:**
+- [PM2](http://pm2.keymetrics.io) - process manager
+- [Flow](https://flowtype.org) - JavaScript type checker
+- [Babel](http://babeljs.io) - JavaScript compiler
+- *For more information read package.json*
+
+**Used local packages:**
+- [Express](http://expressjs.com/) - web framework for Node.js
+- [React](https://facebook.github.io/react) - UI
+- [ESLint](http://eslint.org) - JavaScript and JSX linter
+- [stylelint](https://stylelint.io) - CSS linter
+- [Babel](http://babeljs.io) - JavaScript compiler
+- [Webpack](https://webpack.js.org) - module bundler
+- *For more information read package.json*
+
+**[Visual Studio Code](https://code.visualstudio.com):**
+- VS Code is free, open source and runs everywhere!
+- VS Code have syntax highlighting and autocomplete
+- VS Code have git built-in
+- VS Code have a lot of extensions to increase your productivity
+- Easily debug your app right from editor by setting breakpoints and pressing F5
+- Use this project with VS Code for best development experience
