@@ -1,9 +1,25 @@
 {
   "private": true,
-  "name": "TODO_NAME",
-  "description": "TODO_DESCRIPTION",
+  "main": "",
+  "name": "",
+  "description": "",
+  "keywords": [],
+  "homepage": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "bugs": {
+    "url": "",
+    "email": ""
+  },
   "version": "1.0.0",
-  "author": "svipben",
+  "license": "MIT",
   "scripts": {
     "pm2-dev": "sudo pm2 start src/server/server.js --watch --env development --node-args=\"--debug=5858\" --log-date-format=\"YYYY-MM-DD HH:mm:ss\" --interpreter babel-node",
     "dev": "yarn pm2-stop && yarn pm2-clear-logs && yarn pm2-dev && yarn pm2-show-logs",
