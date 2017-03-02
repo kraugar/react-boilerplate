@@ -21,12 +21,26 @@
 
 **Project structure:**
 - .vscode - TODO
+    - launch.json - TODO
 - build - TODO
 - node_modules - TODO
 - src/assets - TODO
+    - fonts - TODO
+    - images - TODO
+    - humans.txt - TODO
+    - robots.txt - TODO
 - src/client - TODO
+    - app - TODO
+        - app.css - TODO
+        - app.jsx - TODO
+    - client.js - TODO
 - src/server - TODO
+    - config.js - TODO
+    - server.js - TODO
 - webpack - TODO
+    - dev.config.js - TODO
+    - dev.server.js - TODO
+    - prod.config.js - TODO
 - .babelrc - TODO
 - .eslintrc.json - TODO
 - .flowconfig - TODO
