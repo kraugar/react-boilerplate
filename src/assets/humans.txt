@@ -1,0 +1,13 @@
+# http://humanstxt.org
+
+/* TEAM */
+Developer: Benas Svipas
+Website: http://svipben.com
+Email: benas.svipas@gmail.com
+Skype: benas.svipas
+Facebook: benas.svipas
+Instagram: benas.svipas
+Twitter: svipben
+LinkedIn: svipben
+GitHub: svipben
+NPM: svipben

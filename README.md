@@ -8,13 +8,15 @@
 - Hot Reload (server & client), forget about F5!
 - Ready for development and production!
 
-**Before starting:**
+**How to start?**
 - Install -> [Node.js](https://nodejs.org/en/download)
 - Install -> [Yarn](https://yarnpkg.com/en/docs/install)
-- Clone project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
+- Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
+- Go to the directory where you downloaded the project
 - Install all needed packages -> `yarn init-packages`
 - Launch development server -> `yarn dev`
 - That's it, you're ready to develop apps faster than ever before!
+- *Not necessary, but you can configure package.json, src/assets/humans.txt and remove README.md*
 
 **Commands:**
 - `dev` - launch development server with Hot Reload (server & client) and debug enabled (port 5858)
