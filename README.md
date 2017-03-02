@@ -8,9 +8,6 @@
 - Hot Reload (server & client), forget about F5!
 - Ready for development and production!
 
-**Compatibility:**
-- Debian and Ubuntu
-
 **How to start?**
 
 1. Install -> [Node.js](https://nodejs.org/en/download)
@@ -51,6 +48,10 @@
 - .stylelintrc.json - TODO
 - package.json - TODO
 - README.md - TODO
+
+**Commands compatibility:**
+- Debian and Ubuntu
+- *More in the future!*
 
 **Commands:**
 - `dev` - launch development server with Hot Reload (server & client) and debug enabled (port 5858)
