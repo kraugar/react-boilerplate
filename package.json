@@ -54,7 +54,8 @@
     "add-webpack-loaders": "sudo yarn add --dev babel-loader react-hot-loader",
     "add-webpack-dev": "sudo yarn add --dev webpack-dev-middleware webpack-hot-middleware",
     "add-webpack": "sudo yarn add --dev webpack && yarn add-webpack-css-loaders && yarn add-webpack-loaders && yarn add-webpack-dev",
-    "init-packages": "yarn add-global-packages && yarn add-express && yarn add-react && yarn add-eslint && yarn add-stylelint && yarn add-babel && yarn add-webpack",
+    "add-local-packages": "yarn add-express && yarn add-react && yarn add-eslint && yarn add-stylelint && yarn add-babel && yarn add-webpack",
+    "init-packages": "yarn add-global-packages && yarn add-local-packages",
     "remove-packages": "sudo rm -rf node_modules",
     "clear": "yarn remove-build && yarn remove-packages",
     "git-credentials": "git config credential.helper store"

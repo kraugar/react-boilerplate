@@ -63,13 +63,14 @@
 - `prod-debug-cluster` - launch production server with **PM2**, Hot Reload (server & client), cluster mode and debug mode
 - `prod-node` - launch production server with **node**
 - `prod-babel-node` - launch production server with **babel-node**
-- `stop` - remove all processes from pm2 list
-- `pm2-update` - update pm2
-- `build-server` - build server for production
-- `build-client` - build client for production
+- `stop` - remove all processes from **PM2** list
+- `pm2-update` - update **PM2**
+- `build-server` - build server for production with **Babel**
+- `build-client` - build client for production with **Babel** and **Webpack**
 - `remove-build` - remove build folder
 - `test` - TODO
 - `add-global-packages` - install needed global packages
+- `add-local-packages` - install needed local packages
 - `init-packages` - install needed global & local packages
 - `remove-packages` - remove node_modules folder
 - `clear` - remove build & node_modules folder
