@@ -28,7 +28,7 @@
 - `prod-babel-node` - launch production server with babel-node
 - `pm2-show-logs` - display all pm2 logs
 - `pm2-clear-logs` - empty all pm2 logs
-- `pm2-stop` - remove all processes from pm2 list
+- `stop` - remove all processes from pm2 list
 - `pm2-list` - display all pm2 processes status
 - `pm2-monit` - monitor all pm2 processes
 - `pm2-update` - update pm2
@@ -63,5 +63,6 @@
 - VS Code is free, open source and runs everywhere!
 - VS Code have syntax highlighting and autocomplete
 - VS Code have git built-in
+- VS Code have integrated terminal
 - VS Code have a lot of extensions to increase your productivity
 - Easily debug your app right from editor by setting breakpoints and by pressing F5
