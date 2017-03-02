@@ -54,15 +54,15 @@
 - *More in the future!*
 
 **Commands:**
-- `dev` - launch development server with Hot Reload (server & client) and debug enabled (port 5858)
-- `dev-cluster` - launch development server with Hot Reload (server & client), cluster mode and debug enabled (port 5858)
-- `dev-babel-node` - launch development server with Hot Reload (client only) and debug enabled (port 5858)
-- `prod` - launch production server with pm2
-- `prod-cluster` - launch production server with cluster mode
-- `prod-debug` - launch production server with Hot Reload (server & client) and debug enabled (port 5858)
-- `prod-debug-cluster` - launch production server with Hot Reload (server & client), cluster mode and debug enabled (port 5858)
-- `prod-node` - launch production server with node
-- `prod-babel-node` - launch production server with babel-node
+- `dev` - launch development server with **PM2**, Hot Reload (server & client) and debug mode
+- `dev-cluster` - launch development server with **PM2**, Hot Reload (server & client), cluster mode and debug mode
+- `dev-babel-node` - launch development server with **babel-node**, Hot Reload (client only) and debug mode
+- `prod` - launch production server with **PM2**
+- `prod-cluster` - launch production server with **PM2** and cluster mode
+- `prod-debug` - launch production server with **PM2**, Hot Reload (server & client) and debug mode
+- `prod-debug-cluster` - launch production server with **PM2**, Hot Reload (server & client), cluster mode and debug mode
+- `prod-node` - launch production server with **node**
+- `prod-babel-node` - launch production server with **babel-node**
 - `stop` - remove all processes from pm2 list
 - `pm2-update` - update pm2
 - `build-server` - build server for production
