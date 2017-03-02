@@ -9,6 +9,7 @@
 - Ready for development and production!
 
 **How to start?**
+
 1. Install -> [Node.js](https://nodejs.org/en/download)
 2. Install -> [Yarn](https://yarnpkg.com/en/docs/install)
 3. Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
