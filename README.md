@@ -8,6 +8,9 @@
 - Hot Reload (server & client), forget about F5!
 - Ready for development and production!
 
+**Compatibility:**
+- Debian and Ubuntu
+
 **How to start?**
 
 1. Install -> [Node.js](https://nodejs.org/en/download)
@@ -91,7 +94,7 @@
 - [Webpack](https://webpack.js.org) - module bundler
 - *For more information read package.json*
 
-**[Visual Studio Code](https://code.visualstudio.com):**
+**[Visual Studio Code:](https://code.visualstudio.com)**
 - Use this project with VS Code for best development experience
 - VS Code is free, open source and runs everywhere!
 - VS Code have syntax highlighting and autocomplete
