@@ -85,9 +85,11 @@
 - `remove:both` - remove both directories (`build` & `node_modules`) and `yarn.lock` file
 - `test` - TODO (thinking about Jest)
 - `install:global` - install global packages
-- `install:prod` - install production packages
-- `install:dev` - install development packages
-- `install:all` - install all needed packages
+- `install:prod` - install production packages (local)
+- `install:dev` - install development packages (local)
+- `install:all` - install all needed packages (global & local)
+- `update:local` - update production and development packages (local)
+- `update:all` - update all packages (global & local)
 - `git:credentials` - store git credentials on disk
 - `version:patch` - increase the last version number, e.g. 1.0.1 (bug fixes and other minor changes)
 - `version:minor` - increase the middle version number, e.g. 1.1.0 (new features which don't break existing features)
