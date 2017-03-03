@@ -22,12 +22,13 @@
 
 1. Install -> [Node.js](https://nodejs.org/en/download)
 2. Install -> [Yarn](https://yarnpkg.com/en/docs/install)
-3. Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
-4. Go to the directory where you downloaded the project
-5. Install all needed packages -> `yarn install:all`
-6. Launch development server -> `yarn run:dev`
-7. That's it, you're ready to develop apps faster than ever before!
-8. Not necessary, but you can edit `package.json`, `src/assets/humans.txt` and `README.md`
+3. Install -> [Git](https://git-scm.com/downloads)
+4. Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
+5. Go to the directory where you downloaded the project
+6. Install all needed packages -> `yarn install:all`
+7. Launch development server -> `yarn run:dev`
+8. That's it, you're ready to develop apps faster than ever before!
+9. Not necessary, but you can edit `package.json`, `src/assets/humans.txt` and `README.md`
 
 **Project structure:**
 - `.vscode/` - VS Code workspace settings
@@ -41,7 +42,7 @@
     - `robots.txt` - gives instructions about app to web robots
 - **`src/client/`** - front-end
     - `app/` - main client files
-        - `app.css` - main CSS which need to be used inside `app.jsx`
+        - `app.css` - main style which need to be used inside `app.jsx`
         - `app.jsx` - main component which contains other React components (e.g. header, footer, navbar, etc.)
     - `client.js` - client entry point (renders `app/app.jsx` with ReactDOM)
 - **`src/server/`** - back-end
@@ -62,7 +63,7 @@
 **Commands compatibility:**
 - Linux;
 - macOS;
-- *TODO: Windows*
+- *TODO: Windows support (cross-env & rm command)*
 
 **Commands:**
 - `run:dev` - launch development server with **PM2**, Hot Reload (server & client) and debug mode
