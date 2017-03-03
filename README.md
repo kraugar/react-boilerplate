@@ -96,9 +96,9 @@
 - `install:all` - install all packages (global & local) with **Yarn**
 - `update:local` - update production and development packages (local) with **Yarn**
 - `update:all` - update all packages (global & local) with **Yarn**
-- `version:patch` - increase the last version number, e.g. 1.0.1 (bug fixes and other minor changes) with **Yarn**
-- `version:minor` - increase the middle version number, e.g. 1.1.0 (new features which don't break existing features) with **Yarn**
-- `version:major` - increase the first version number, e.g. 2.0.0 (changes which break backwards compatibility) with **Yarn**
+- `version:patch` - increase last version number, e.g. 1.0.1 (bug fixes and other minor changes) with **Yarn**
+- `version:minor` - increase middle version number, e.g. 1.1.0 (new features which don't break existing features) with **Yarn**
+- `version:major` - increase first version number, e.g. 2.0.0 (changes which break backwards compatibility) with **Yarn**
 - `version:clean` - change version back to 1.0.0
 - `git:credentials` - store git credentials on disk
 - *Remember all commands starts with `yarn`!*
