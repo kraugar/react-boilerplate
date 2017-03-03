@@ -89,13 +89,16 @@
 - `install:dev` - install development packages
 - `install:all` - install all needed packages
 - `git:credentials` - store git credentials on disk
-- *Remember all commands starts with __yarn__! For more information read package.json*
+- `version:patch` - increase the last version number, e.g. 1.0.1 (bug fixes and other minor changes)
+- `version:minor` - increase the middle version number, e.g. 1.1.0 (new features which don't break existing features)
+- `version:major` - increase the first version number, e.g. 2.0.0 (changes which break backwards compatibility)
+- `version:clean` - changes version back to 1.0.0
+- *Remember all commands starts with __`yarn`__!*
 
 **Used global packages:**
 - [pm2](http://pm2.keymetrics.io) - process manager
 - [flow-bin](https://flowtype.org) - JavaScript type checker
 - [babel-cli](http://babeljs.io) - JavaScript compiler (command line)
-- *For more information read package.json*
 
 **Used local packages:**
 - [express](http://expressjs.com) - web framework for Node.js
@@ -120,7 +123,6 @@
     - [css-loader](https://github.com/webpack-contrib/css-loader) - css loader module for webpack
     - [postcss-loader](https://github.com/postcss/postcss-loader) - PostCSS loader for webpack
     - [precss](https://github.com/jonathantneal/precss) - use Sass-like markup in your CSS
-- *For more information read package.json*
 
 **[Visual Studio Code:](https://code.visualstudio.com)**
 - Use this project with VS Code for best development experience;
