@@ -9,7 +9,7 @@
         "mongo": true, // MongoDB global variables
         "shelljs": true, // ShellJS global variables
         "phantomjs": true, // PhantomJS global variables
-        "mocha": true // Adds all of the Mocha testing global variables
+        "jest": true // Jest global variables
     },
     "parserOptions": { // Allows you to specify the JavaScript language options you want to support
         "ecmaVersion": 6, // Specify the version of ECMAScript syntax you want to use

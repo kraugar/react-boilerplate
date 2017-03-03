@@ -6,6 +6,9 @@ build
 # Node.js packages
 node_modules
 
+# Code coverage
+coverage
+
 # Loggings
 yarn-error.log
 npm-debug.log
