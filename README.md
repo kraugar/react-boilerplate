@@ -96,9 +96,9 @@
 - `install:all` - install all packages (global & local) with **Yarn**
 - `update:local` - update production and development packages (local) with **Yarn**
 - `update:all` - update all packages (global & local) with **Yarn**
-- `version:patch` - increase last version number, e.g. 1.0.1 (bug fixes and other minor changes) with **Yarn**
-- `version:minor` - increase middle version number, e.g. 1.1.0 (new features which don't break existing features) with **Yarn**
-- `version:major` - increase first version number, e.g. 2.0.0 (changes which break backwards compatibility) with **Yarn**
+- `version:patch` - increase last version number, e.g. 1.0.1 (bug fixes and other minor changes)
+- `version:minor` - increase middle version number, e.g. 1.1.0 (new features which don't break existing features)
+- `version:major` - increase first version number, e.g. 2.0.0 (changes which break backwards compatibility)
 - `version:clean` - change version back to 1.0.0
 - `git:credentials` - store git credentials on disk
 - *Remember all commands starts with `yarn`!*
@@ -112,6 +112,8 @@
 - [express](http://expressjs.com) - web framework for Node.js
 - [react & react-dom](https://facebook.github.io/react) - JavaScript library for building UI
 - [jest](https://facebook.github.io/jest) - JavaScript testing framework
+    - [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest) - Babel Jest plugin
+    - [react-test-renderer](https://github.com/facebook/react/tree/master/packages/react-test-renderer) - makes it easy to grab a snapshot of the "DOM tree"
 - [stylelint](https://stylelint.io) - CSS linter
 - [eslint](http://eslint.org) - JavaScript and JSX linter
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - React linter

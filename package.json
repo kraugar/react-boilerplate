@@ -44,7 +44,7 @@
     "remove:all": "yarn remove:build && yarn remove:packages && yarn remove:coverage",
     "install:global": "yarn global add pm2@latest flow-bin@latest babel-cli@latest",
     "install:prod": "yarn add babel-runtime express react react-dom",
-    "install:dev": "yarn add --dev jest stylelint eslint eslint-plugin-react babel-eslint babel-core babel-plugin-transform-runtime babel-preset-latest babel-preset-flow babel-preset-react babel-preset-stage-2 webpack webpack-dev-middleware webpack-hot-middleware babel-loader react-hot-loader style-loader css-loader postcss-loader precss",
+    "install:dev": "yarn add --dev jest babel-jest react-test-renderer stylelint eslint eslint-plugin-react babel-eslint babel-core babel-plugin-transform-runtime babel-preset-latest babel-preset-flow babel-preset-react babel-preset-stage-2 webpack webpack-dev-middleware webpack-hot-middleware babel-loader react-hot-loader style-loader css-loader postcss-loader precss",
     "install:local": "yarn install:prod && yarn install:dev",
     "install:all": "yarn install:global && yarn install:prod && yarn install:dev",
     "update:local": "yarn upgrade-interactive",
