@@ -92,8 +92,8 @@
 - `version:patch` - increase the last version number, e.g. 1.0.1 (bug fixes and other minor changes)
 - `version:minor` - increase the middle version number, e.g. 1.1.0 (new features which don't break existing features)
 - `version:major` - increase the first version number, e.g. 2.0.0 (changes which break backwards compatibility)
-- `version:clean` - changes version back to 1.0.0
-- *Remember all commands starts with __`yarn`__!*
+- `version:clean` - change version back to 1.0.0
+- *Remember all commands starts with `yarn`!*
 
 **Used global packages:**
 - [pm2](http://pm2.keymetrics.io) - process manager
