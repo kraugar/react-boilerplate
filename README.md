@@ -1,22 +1,22 @@
 # React Boilerplate (still need to finish)
 
 **Features:**
-- Node.js for back-end and React for front-end
-- Made structure which fits small, medium or large project (you can change it according to your needs)
-- React, JSX, ES6 and Flow syntax support
-- Language extras beyond ES6 like the object spread operator, etc.
-- Some experimental syntax extensions (e.g. decorators)
-- Server rendering support
-- Import CSS and images directly from JavaScript
-- Autoprefixed CSS, so you don’t need `-webkit` or other prefixes
-- CSS Modules support
-- LESS or Sass support
-- Includes a lot of ready to use commands for better development and production
-- Configured ESLint and stylelint for better code analysis
-- Hot Reload (server & client), forget about F5!
-- Ready for development and production!
-- Increases your productivity
-- There are **NO LIMITATIONS**, do whatever you want!
+- Node.js for back-end and React for front-end;
+- Made structure which fits small, medium or large project (you can change it according to your needs);
+- React, JSX, ES6 and Flow syntax support;
+- Language extras beyond ES6 like the object spread operator, etc.;
+- Some experimental syntax extensions (e.g. decorators);
+- Server rendering support;
+- Import CSS and images directly from JavaScript;
+- Autoprefixed CSS, so you don’t need `-webkit` or other prefixes;
+- CSS Modules support;
+- LESS or Sass support;
+- Includes a lot of ready to use commands for better development and production;
+- Configured ESLint and stylelint for better code analysis;
+- Hot Reload (server & client), forget about F5;
+- Ready for development and production;
+- Increases your productivity by letting you to code instantly without any configuration;
+- There are **NO LIMITATIONS**, do whatever you want.
 
 **How to start?**
 
@@ -60,7 +60,7 @@
 - `README.md` - project description
 
 **Commands compatibility:**
-- Debian and Ubuntu
+- Debian and Ubuntu;
 - *TODO: More in the future!*
 
 **Commands:**
@@ -120,10 +120,10 @@
 - *For more information read package.json*
 
 **[Visual Studio Code:](https://code.visualstudio.com)**
-- Use this project with VS Code for best development experience
-- VS Code is free, open source and runs everywhere!
-- VS Code have syntax highlighting and autocomplete
-- VS Code have git built-in
-- VS Code have integrated terminal
-- VS Code have a lot of extensions to increase your productivity
-- Easily debug your app right from editor by setting breakpoints and by pressing F5
+- Use this project with VS Code for best development experience;
+- VS Code is free, open source and runs everywhere;
+- VS Code have syntax highlighting and autocomplete;
+- VS Code have git built-in;
+- VS Code have integrated terminal;
+- VS Code have a lot of extensions to increase your productivity;
+- Easily debug your app right from editor by setting breakpoints and by pressing F5.
