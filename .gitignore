@@ -3,7 +3,7 @@
 # Compiled src (server & client)
 build
 
-# Node.js dependency directory
+# Node.js packages
 node_modules
 
 # Loggings

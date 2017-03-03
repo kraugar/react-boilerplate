@@ -33,21 +33,21 @@
 - `.vscode` - VS Code workspace settings
     - `launch.json` - VS Code debug configuration
 - `build` - compiled src (server & client)
-- `node_modules` - Node.js dependency directory
-- `src/assets` - static files (e.g. fonts, images, etc.)
-    - `fonts` - app fonts
-    - `images` - app images
+- `node_modules` - Node.js packages
+- **`src/assets`** - static files (e.g. fonts, images, etc.)
+    - `fonts`
+    - `images`
     - `humans.txt` - contains information about the people who have contributed to building the app
     - `robots.txt` - gives instructions about app to web robots
-- `src/client` - front-end
+- **`src/client`** - front-end
     - `app` - main client files
         - `app.css` - main CSS which need to be used inside `app.jsx`
         - `app.jsx` - main component which contains other React components (e.g. header, footer, navbar, etc.)
     - `client.js` - client entry point (renders `app/app.jsx` with ReactDOM)
-- `src/server` - back-end
+- **`src/server`** - back-end
     - `config.js` - server configuration (e.g. port, hostname, etc.)
     - `server.js` - server entry point (starts app with Express framework)
-- `webpack` - webpack configurations
+- **`webpack`** - webpack configurations
     - `dev.config.js` - development configuration
     - `dev.server.js` - development server
     - `prod.config.js` - production configuration
@@ -106,7 +106,7 @@
     - [babel-preset-flow](https://github.com/babel/babel/tree/master/packages/babel-preset-flow) - Babel preset for all Flow plugins
     - [babel-preset-react](https://github.com/babel/babel/tree/master/packages/babel-preset-react) - Babel preset for all React plugins
     - [babel-preset-stage-2](https://github.com/babel/babel/tree/master/packages/babel-preset-stage-2) - Babel preset for stage 2 plugins
-- [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - will be used by transpiled code at runtime
+- [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - used by transpiled code at runtime
     - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - transforms code to remove the helpers and use the ones in babel-runtime
 - [webpack](https://webpack.js.org) - module bundler
     - [style-loader](https://github.com/webpack-contrib/style-loader) - style loader module for webpack
