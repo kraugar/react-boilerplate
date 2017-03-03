@@ -24,30 +24,30 @@
 2. Install -> [Yarn](https://yarnpkg.com/en/docs/install)
 3. Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
 4. Go to the directory where you downloaded the project
-5. Install all needed packages -> `yarn init-packages`
-6. Launch development server -> `yarn dev`
+5. Install all needed packages -> `yarn install:packages-all`
+6. Launch development server -> `yarn run:dev`
 7. That's it, you're ready to develop apps faster than ever before!
 8. Not necessary, but you can edit `package.json`, `src/assets/humans.txt` and `README.md`
 
 **Project structure:**
-- `.vscode` - VS Code workspace settings
+- `.vscode/` - VS Code workspace settings
     - `launch.json` - VS Code debug configuration
-- `build` - compiled src (server & client)
-- `node_modules` - Node.js packages
-- **`src/assets`** - static files (e.g. fonts, images, etc.)
-    - `fonts`
-    - `images`
+- `build/` - compiled src (server & client)
+- `node_modules/` - Node.js packages
+- **`src/assets/`** - static files (e.g. fonts, images, etc.)
+    - `fonts/` - contains all fonts
+    - `images/` - contains all images
     - `humans.txt` - contains information about the people who have contributed to building the app
     - `robots.txt` - gives instructions about app to web robots
-- **`src/client`** - front-end
-    - `app` - main client files
+- **`src/client/`** - front-end
+    - `app/` - main client files
         - `app.css` - main CSS which need to be used inside `app.jsx`
         - `app.jsx` - main component which contains other React components (e.g. header, footer, navbar, etc.)
     - `client.js` - client entry point (renders `app/app.jsx` with ReactDOM)
-- **`src/server`** - back-end
+- **`src/server/`** - back-end
     - `config.js` - server configuration (e.g. port, hostname, etc.)
     - `server.js` - server entry point (starts app with Express framework)
-- **`webpack`** - webpack configurations
+- `webpack/` - webpack configurations
     - `dev.config.js` - development configuration
     - `dev.server.js` - development server
     - `prod.config.js` - production configuration
@@ -64,28 +64,29 @@
 - *TODO: More in the future!*
 
 **Commands:**
-- `dev` - launch development server with **PM2**, Hot Reload (server & client) and debug mode
-- `dev-cluster` - launch development server with **PM2**, Hot Reload (server & client), cluster mode and debug mode
-- `dev-babel-node` - launch development server with **babel-node**, Hot Reload (client only) and debug mode
-- `prod` - build (server & client) and launch production server with **PM2**
-- `prod-cluster` - build (server & client) and launch production server with **PM2** and cluster mode
-- `prod-debug` - build (server & client) and launch production server with **PM2**, Hot Reload (server & client) and debug mode
-- `prod-debug-cluster` - build (server & client) and launch production server with **PM2**, Hot Reload (server & client), cluster mode and debug mode
-- `prod-node` - build (server & client) and launch production server with **node**
-- `prod-babel-node` - build (server & client) and launch production server with **babel-node**
-- `stop` - remove all processes from **PM2** list
-- `pm2-update` - update **PM2**
-- `build-server` - build server for production with **Babel**
-- `build-client` - build client for production with **Babel** and **Webpack**
-- `build` - build both (server & client) for production with **Babel** and **Webpack**
-- `remove-build` - remove build folder
+- `run:dev` - launch development server with **PM2**, Hot Reload (server & client) and debug mode
+- `run:dev-cluster` - launch development server with **PM2**, Hot Reload (server & client), cluster mode and debug mode
+- `run:dev-babel` - launch development server with **babel-node**, Hot Reload (client only) and debug mode
+- `run:prod` - build (server & client) and launch production server with **PM2**
+- `run:prod-cluster` - build (server & client) and launch production server with **PM2** and cluster mode
+- `run:prod-debug` - build (server & client) and launch production server with **PM2**, Hot Reload (server & client) and debug mode
+- `run:prod-debug-cluster` - build (server & client) and launch production server with **PM2**, Hot Reload (server & client), cluster mode and debug mode
+- `run:prod-node` - build (server & client) and launch production server with **node**
+- `run:prod-babel` - build (server & client) and launch production server with **babel-node**
+- `pm2:stop` - remove all processes from **PM2** list
+- `pm2:update` - update **PM2**
+- `build:server` - build server for production with **Babel**
+- `build:client` - build client for production with **Babel** and **Webpack**
+- `build:both` - build both (server & client) for production with **Babel** and **Webpack**
+- `remove:build` - remove build
+- `remove:packages` - remove node_modules
+- `remove:both` - remove both (build & node_modules)
 - `test` - TODO (thinking about Jest)
-- `add-global-packages` - install needed global packages
-- `add-local-packages` - install needed local packages
-- `init-packages` - install needed global & local packages
-- `remove-packages` - remove node_modules folder
-- `clear` - remove build & node_modules folder
-- `git-credentials` - store git credentials on disk
+- `install:packages-global` - install global packages
+- `install:packages-prod` - install prod packages
+- `install:packages-dev` - install dev packages
+- `install:packages-all` - install all needed packages
+- `git:credentials` - store git credentials on disk
 - *Remember all commands starts with __yarn__! For more information read package.json*
 
 **Used global packages:**
