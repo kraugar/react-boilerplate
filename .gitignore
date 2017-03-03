@@ -1,10 +1,10 @@
 # See https://github.com/github/gitignore for collection of useful .gitignore templates
 
-# Dependency directory
-node_modules
-
-# Compiled src (production)
+# Compiled src (server & client)
 build
+
+# Node.js dependency directory
+node_modules
 
 # Loggings
 yarn-error.log

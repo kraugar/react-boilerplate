@@ -15,6 +15,7 @@
 - Configured ESLint and stylelint for better code analysis
 - Hot Reload (server & client), forget about F5!
 - Ready for development and production!
+- Increases your productivity
 - There are **NO LIMITATIONS**, do whatever you want!
 
 **How to start?**
@@ -29,38 +30,38 @@
 8. Not necessary, but you can edit `package.json`, `src/assets/humans.txt` and `README.md`
 
 **Project structure:**
-- .vscode - TODO
-    - launch.json - TODO
-- build - TODO
-- node_modules - TODO
-- src/assets - TODO
-    - fonts - TODO
-    - images - TODO
-    - humans.txt - TODO
-    - robots.txt - TODO
-- src/client - TODO
-    - app - TODO
-        - app.css - TODO
-        - app.jsx - TODO
-    - client.js - TODO
-- src/server - TODO
-    - config.js - TODO
-    - server.js - TODO
-- webpack - TODO
-    - dev.config.js - TODO
-    - dev.server.js - TODO
-    - prod.config.js - TODO
-- .babelrc - TODO
-- .eslintrc.json - TODO
-- .flowconfig - TODO
-- .gitignore - TODO
-- .stylelintrc.json - TODO
-- package.json - TODO
-- README.md - TODO
+- `.vscode` - VS Code workspace settings
+    - `launch.json` - VS Code debug configuration
+- `build` - compiled src (server & client)
+- `node_modules` - Node.js dependency directory
+- `src/assets` - static files (e.g. fonts, images, etc.)
+    - `fonts` - app fonts
+    - `images` - app images
+    - `humans.txt` - contains information about the people who have contributed to building the app
+    - `robots.txt` - gives instructions about app to web robots
+- `src/client` - front-end
+    - `app` - main client files
+        - `app.css` - main CSS which need to be used inside `app.jsx`
+        - `app.jsx` - main component which contains other React components (e.g. header, footer, navbar, etc.)
+    - `client.js` - client entry point (renders `app/app.jsx` with ReactDOM)
+- `src/server` - back-end
+    - `config.js` - server configuration (e.g. port, hostname, etc.)
+    - `server.js` - server entry point (starts app with Express framework)
+- `webpack` - webpack configurations
+    - `dev.config.js` - development configuration
+    - `dev.server.js` - development server
+    - `prod.config.js` - production configuration
+- `.babelrc` - Babel configuration
+- `.eslintrc.json` - ESLint configuration
+- `.flowconfig` - Flow configuration
+- `.gitignore` - specifies intentionally untracked files that Git should ignore
+- `.stylelintrc.json` - stylelint configuration
+- `package.json` - various metadata relevant to the project
+- `README.md` - project description
 
 **Commands compatibility:**
 - Debian and Ubuntu
-- *More in the future!*
+- *TODO: More in the future!*
 
 **Commands:**
 - `dev` - launch development server with **PM2**, Hot Reload (server & client) and debug mode
@@ -74,11 +75,11 @@
 - `prod-babel-node` - build (server & client) and launch production server with **babel-node**
 - `stop` - remove all processes from **PM2** list
 - `pm2-update` - update **PM2**
-- `build-server` - build only server for production with **Babel**
-- `build-client` - build only client for production with **Babel** and **Webpack**
+- `build-server` - build server for production with **Babel**
+- `build-client` - build client for production with **Babel** and **Webpack**
 - `build` - build both (server & client) for production with **Babel** and **Webpack**
 - `remove-build` - remove build folder
-- `test` - TODO
+- `test` - TODO (thinking about Jest)
 - `add-global-packages` - install needed global packages
 - `add-local-packages` - install needed local packages
 - `init-packages` - install needed global & local packages
@@ -105,8 +106,8 @@
     - [babel-preset-flow](https://github.com/babel/babel/tree/master/packages/babel-preset-flow) - Babel preset for all Flow plugins
     - [babel-preset-react](https://github.com/babel/babel/tree/master/packages/babel-preset-react) - Babel preset for all React plugins
     - [babel-preset-stage-2](https://github.com/babel/babel/tree/master/packages/babel-preset-stage-2) - Babel preset for stage 2 plugins
-- [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - TODO
-    - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - TODO
+- [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - will be used by transpiled code at runtime
+    - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - transforms code to remove the helpers and use the ones in babel-runtime
 - [webpack](https://webpack.js.org) - module bundler
     - [style-loader](https://github.com/webpack-contrib/style-loader) - style loader module for webpack
     - [css-loader](https://github.com/webpack-contrib/css-loader) - css loader module for webpack
