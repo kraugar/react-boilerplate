@@ -89,16 +89,16 @@
 - `remove:packages` - remove `node_modules` directory and `yarn.lock` file
 - `remove:coverage` - remove `coverage` directory
 - `remove:all` - remove all directories (`build`, `node_modules`, `coverage`) and `yarn.lock` file
-- `install:global` - install global packages
-- `install:prod` - install production packages (local)
-- `install:dev` - install development packages (local)
-- `install:local` - install production and development packages (local)
-- `install:all` - install all packages (global & local)
-- `update:local` - update production and development packages (local)
-- `update:all` - update all packages (global & local)
-- `version:patch` - increase the last version number, e.g. 1.0.1 (bug fixes and other minor changes)
-- `version:minor` - increase the middle version number, e.g. 1.1.0 (new features which don't break existing features)
-- `version:major` - increase the first version number, e.g. 2.0.0 (changes which break backwards compatibility)
+- `install:global` - install global packages with **Yarn**
+- `install:prod` - install production packages (local) with **Yarn**
+- `install:dev` - install development packages (local) with **Yarn**
+- `install:local` - install production and development packages (local) with **Yarn**
+- `install:all` - install all packages (global & local) with **Yarn**
+- `update:local` - update production and development packages (local) with **Yarn**
+- `update:all` - update all packages (global & local) with **Yarn**
+- `version:patch` - increase the last version number, e.g. 1.0.1 (bug fixes and other minor changes) with **Yarn**
+- `version:minor` - increase the middle version number, e.g. 1.1.0 (new features which don't break existing features) with **Yarn**
+- `version:major` - increase the first version number, e.g. 2.0.0 (changes which break backwards compatibility) with **Yarn**
 - `version:clean` - change version back to 1.0.0
 - `git:credentials` - store git credentials on disk
 - *Remember all commands starts with `yarn`!*
