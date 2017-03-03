@@ -3,34 +3,34 @@
         // Development
         "development": {
             "presets": [
-                "flow",
-                "stage-2"
+                "flow", // Flow support
+                "stage-2" // Experimental syntax extensions
             ],
-            "sourceMaps": true
+            "sourceMaps": true // Compile with Source Maps
         },
         // src/__tests__/
         "test": {
             "plugins": [
-                "transform-runtime"
+                "transform-runtime" // Transforms code to remove the helpers and use the ones in babel-runtime
             ],
             "presets": [
-                "latest",
-                "flow",
-                "react",
-                "stage-2"
+                "latest", // All you need to compile what's in ES2015+
+                "flow", // Flow support
+                "react", // Strip flow types and transform JSX
+                "stage-2" // Experimental syntax extensions
             ],
-            "sourceMaps": true
+            "sourceMaps": true // Compile with Source Maps
         },
         // src/client/
         "client": {
             "plugins": [
-                "transform-runtime"
+                "transform-runtime" // Transforms code to remove the helpers and use the ones in babel-runtime
             ],
             "presets": [
-                "latest",
-                "flow",
-                "react",
-                "stage-2"
+                "latest", // All you need to compile what's in ES2015+
+                "flow", // Flow support
+                "react", // Strip flow types and transform JSX
+                "stage-2" // Experimental syntax extensions
             ]
             //"sourceMaps": true TODO: need here or in webpack?
             //"comments": false TODO: need here or in webpack?
@@ -38,13 +38,19 @@
         // src/server/
         "server": {
             "plugins": [
-                "transform-runtime"
+                [
+                    "transform-es2015-modules-commonjs", // Transforms ES2015 modules to CommonJS
+                    {
+                        "loose": true // When in loose mode import and export are allowed to be used anywhere
+                    }
+                ],
+                "transform-runtime" // Transforms code to remove the helpers and use the ones in babel-runtime
             ],
             "presets": [
-                "flow",
-                "stage-2"
+                "flow", // Flow support
+                "stage-2" // Experimental syntax extensions
             ],
-            "comments": true
+            "comments": true // Compile with comments
         }
     }
 }

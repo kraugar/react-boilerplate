@@ -1,8 +1,12 @@
 // @flow
 
 // Modules
-import * as React from 'react';
+import React from 'react';
 
-export class App extends React.Component {
-
+export default class App extends React.Component {
+    render() {
+        return (
+            <h1>Change this text!</h1>
+        );
+    }
 }

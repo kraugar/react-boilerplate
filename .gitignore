@@ -9,6 +9,9 @@ node_modules
 # Code coverage
 coverage
 
+# Snapshot tests
+__snapshots__
+
 # Loggings
 yarn-error.log
 npm-debug.log

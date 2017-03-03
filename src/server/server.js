@@ -1,10 +1,10 @@
 // @flow
 
 // Modules
-const express = require('express');
+import express from 'express';
 
 // Local
-const config = require('./config.js');
+import config from './config.js';
 
 // Server
 const server = express();

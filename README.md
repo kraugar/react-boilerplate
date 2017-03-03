@@ -38,8 +38,6 @@
 - `node_modules/` - Node.js packages
 - **`src/__tests__/`** - tests directory
 - **`src/assets/`** - static files (e.g. fonts, images, etc.)
-    - `fonts/` - fonts directory
-    - `images/` - images directory
     - `humans.txt` - contains information about the people who have contributed to building the app
     - `robots.txt` - gives instructions about app to web robots
 - **`src/client/`** - front-end
@@ -88,7 +86,8 @@
 - `remove:build` - remove `build` directory
 - `remove:packages` - remove `node_modules` directory and `yarn.lock` file
 - `remove:coverage` - remove `coverage` directory
-- `remove:all` - remove all directories (`build`, `node_modules`, `coverage`) and `yarn.lock` file
+- `remove:snapshots` - remove `src/__tests__/__snapshots__` directory
+- `remove:all` - remove all directories (`build`, `node_modules`, `coverage`, `src/__tests__/__snapshots__`) and `yarn.lock` file
 - `install:global` - install global packages with **Yarn**
 - `install:prod` - install production packages (local) with **Yarn**
 - `install:dev` - install development packages (local) with **Yarn**
@@ -120,6 +119,7 @@
     - [babel-eslint](https://github.com/babel/babel-eslint) - Babel linter
 - [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - used by transpiled code at runtime
     - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - transforms code to remove the helpers and use the ones in babel-runtime
+    - [babel-plugin-transform-es2015-modules-commonjs](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-es2015-modules-commonjs) - transforms ES2015 modules to CommonJS
 - [babel-core](https://github.com/babel/babel/tree/master/packages/babel-core) - Babel compiler core
     - [babel-preset-latest](https://github.com/babel/babel/tree/master/packages/babel-preset-latest) - Babel preset including es2015, es2016, es2017
     - [babel-preset-flow](https://github.com/babel/babel/tree/master/packages/babel-preset-flow) - Babel preset for all Flow plugins

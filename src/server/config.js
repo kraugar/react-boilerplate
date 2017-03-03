@@ -1,6 +1,6 @@
 // @flow
 
-module.exports = {
+export default {
     port: 3000,
     hostname: 'localhost'
 };
