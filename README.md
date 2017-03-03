@@ -24,7 +24,7 @@
 2. Install -> [Yarn](https://yarnpkg.com/en/docs/install)
 3. Download project with git -> `git clone https://github.com/svipben/react-boilerplate.git`
 4. Go to the directory where you downloaded the project
-5. Install all needed packages -> `yarn install:packages-all`
+5. Install all needed packages -> `yarn install:all`
 6. Launch development server -> `yarn run:dev`
 7. That's it, you're ready to develop apps faster than ever before!
 8. Not necessary, but you can edit `package.json`, `src/assets/humans.txt` and `README.md`
@@ -60,8 +60,9 @@
 - `README.md` - project description
 
 **Commands compatibility:**
-- Debian and Ubuntu;
-- *TODO: More in the future!*
+- Linux;
+- macOS;
+- *TODO: Windows*
 
 **Commands:**
 - `run:dev` - launch development server with **PM2**, Hot Reload (server & client) and debug mode
@@ -78,14 +79,14 @@
 - `build:server` - build server for production with **Babel**
 - `build:client` - build client for production with **Babel** and **Webpack**
 - `build:both` - build both (server & client) for production with **Babel** and **Webpack**
-- `remove:build` - remove build
-- `remove:packages` - remove node_modules
-- `remove:both` - remove both (build & node_modules)
+- `remove:build` - remove `build` directory
+- `remove:packages` - remove `node_modules` directory and `yarn.lock` file
+- `remove:both` - remove both directories (`build` & `node_modules`) and `yarn.lock` file
 - `test` - TODO (thinking about Jest)
-- `install:packages-global` - install global packages
-- `install:packages-prod` - install prod packages
-- `install:packages-dev` - install dev packages
-- `install:packages-all` - install all needed packages
+- `install:global` - install global packages
+- `install:prod` - install production packages
+- `install:dev` - install development packages
+- `install:all` - install all needed packages
 - `git:credentials` - store git credentials on disk
 - *Remember all commands starts with __yarn__! For more information read package.json*
 
@@ -98,26 +99,26 @@
 **Used local packages:**
 - [express](http://expressjs.com) - web framework for Node.js
 - [react & react-dom](https://facebook.github.io/react) - UI
+- [stylelint](https://stylelint.io) - CSS linter
 - [eslint](http://eslint.org) - JavaScript and JSX linter
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - React linter
     - [babel-eslint](https://github.com/babel/babel-eslint) - Babel linter
-- [stylelint](https://stylelint.io) - CSS linter
+- [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - used by transpiled code at runtime
+    - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - transforms code to remove the helpers and use the ones in babel-runtime
 - [babel-core](https://github.com/babel/babel/tree/master/packages/babel-core) - Babel compiler core
     - [babel-preset-latest](https://github.com/babel/babel/tree/master/packages/babel-preset-latest) - Babel preset including es2015, es2016, es2017
     - [babel-preset-flow](https://github.com/babel/babel/tree/master/packages/babel-preset-flow) - Babel preset for all Flow plugins
     - [babel-preset-react](https://github.com/babel/babel/tree/master/packages/babel-preset-react) - Babel preset for all React plugins
     - [babel-preset-stage-2](https://github.com/babel/babel/tree/master/packages/babel-preset-stage-2) - Babel preset for stage 2 plugins
-- [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - used by transpiled code at runtime
-    - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - transforms code to remove the helpers and use the ones in babel-runtime
 - [webpack](https://webpack.js.org) - module bundler
+    - [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) - dev middleware for webpack, which arguments a live bundle to a directory
+    - [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) - webpack hot reloading
+    - [babel-loader](https://github.com/babel/babel-loader) - webpack plugin for Babel
+    - [react-hot-loader](https://github.com/gaearon/react-hot-loader) - tweak React components in real time
     - [style-loader](https://github.com/webpack-contrib/style-loader) - style loader module for webpack
     - [css-loader](https://github.com/webpack-contrib/css-loader) - css loader module for webpack
     - [postcss-loader](https://github.com/postcss/postcss-loader) - PostCSS loader for webpack
     - [precss](https://github.com/jonathantneal/precss) - use Sass-like markup in your CSS
-    - [babel-loader](https://github.com/babel/babel-loader) - webpack plugin for Babel
-    - [react-hot-loader](https://github.com/gaearon/react-hot-loader) - tweak React components in real time
-    - [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) - dev middleware for webpack, which arguments a live bundle to a directory
-    - [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) - webpack hot reloading
 - *For more information read package.json*
 
 **[Visual Studio Code:](https://code.visualstudio.com)**
