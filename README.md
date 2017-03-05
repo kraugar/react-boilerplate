@@ -29,17 +29,17 @@
 6. Install all needed packages -> `yarn install:all`
 7. Run development server -> `yarn run:dev`
 8. That's it, you're ready to develop apps faster than ever before!
-9. Not necessary, but you can edit `package.json`, `src/assets/humans.txt` and `README.md`
+9. Not necessary, but you can edit `package.json`, `public/humans.txt` and `README.md`
 
 **Project structure:**
 - `.vscode/` - VS Code workspace settings
     - `launch.json` - VS Code debug configuration
 - `build/` - compiled src (server & client)
 - `node_modules/` - Node.js packages
-- **`src/__tests__/`** - tests directory
-- **`src/assets/`** - static files (e.g. fonts, images, etc.)
+- **`public/`** - static files (e.g. fonts, images, favicon, etc.)
     - `humans.txt` - contains information about the people who have contributed to building the app
     - `robots.txt` - gives instructions about app to web robots
+- **`src/__tests__/`** - tests directory
 - **`src/client/`** - front-end
     - `app/` - main client files
         - `app.css` - main style which need to be used inside `app.jsx`
@@ -81,8 +81,8 @@
 - `pm2:stop` - remove all processes from **PM2** list
 - `pm2:update` - update **PM2**
 - `build:server` - build server for production with **Babel**
-- `build:client` - build client for production with **Babel** and **Webpack**
-- `build:both` - build both (server & client) for production with **Babel** and **Webpack**
+- `build:client` - build client for production with **Webpack**
+- `build:both` - build both (server & client) for production
 - `remove:build` - remove `build` directory
 - `remove:packages` - remove `node_modules` directory and `yarn.lock` file
 - `remove:coverage` - remove `coverage` directory
