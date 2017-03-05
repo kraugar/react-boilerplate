@@ -112,15 +112,14 @@
 - [react & react-dom](https://facebook.github.io/react) - JavaScript library for building UI
 - [jest](https://facebook.github.io/jest) - JavaScript testing framework
     - [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest) - Babel Jest plugin
-    - [react-test-renderer](https://github.com/facebook/react/tree/master/packages/react-test-renderer) - makes it easy to grab a snapshot of the "DOM tree"
 - [stylelint](https://stylelint.io) - CSS linter
 - [eslint](http://eslint.org) - JavaScript and JSX linter
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - React linter
     - [babel-eslint](https://github.com/babel/babel-eslint) - Babel linter
 - [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - used by transpiled code at runtime
     - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - transforms code to remove the helpers and use the ones in babel-runtime
-    - [babel-plugin-transform-es2015-modules-commonjs](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-es2015-modules-commonjs) - transforms ES2015 modules to CommonJS
 - [babel-core](https://github.com/babel/babel/tree/master/packages/babel-core) - Babel compiler core
+    - [babel-plugin-transform-es2015-modules-commonjs](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-es2015-modules-commonjs) - transforms ES2015 modules to CommonJS
     - [babel-preset-latest](https://github.com/babel/babel/tree/master/packages/babel-preset-latest) - Babel preset including es2015, es2016, es2017
     - [babel-preset-flow](https://github.com/babel/babel/tree/master/packages/babel-preset-flow) - Babel preset for all Flow plugins
     - [babel-preset-react](https://github.com/babel/babel/tree/master/packages/babel-preset-react) - Babel preset for all React plugins
