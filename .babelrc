@@ -2,6 +2,14 @@
     "env": {
         // Development
         "development": {
+            "plugins": [
+                [
+                    "transform-es2015-modules-commonjs", // Transforms ES2015 modules to CommonJS
+                    {
+                        "loose": true // When in loose mode import and export are allowed to be used anywhere
+                    }
+                ]
+            ],
             "presets": [
                 "flow", // Flow support
                 "stage-2" // Experimental syntax extensions
