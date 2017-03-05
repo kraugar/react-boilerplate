@@ -4,7 +4,7 @@
 - Node.js for back-end and React for front-end;
 - Made structure which fits small, medium or large project (you can change it according to your needs);
 - React, JSX, ES6 and Flow syntax support;
-- Language extras beyond ES6 like the object spread operator, etc.;
+- Language extras beyond ES6 (e.g. object spread operator);
 - Some experimental syntax extensions (e.g. decorators);
 - Server rendering support;
 - Import CSS and images directly from JavaScript;
@@ -119,7 +119,6 @@
 - [babel-runtime](https://github.com/babel/babel/tree/master/packages/babel-runtime) - used by transpiled code at runtime
     - [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime) - transforms code to remove the helpers and use the ones in babel-runtime
 - [babel-core](https://github.com/babel/babel/tree/master/packages/babel-core) - Babel compiler core
-    - [babel-plugin-transform-es2015-modules-commonjs](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-es2015-modules-commonjs) - transforms ES2015 modules to CommonJS
     - [babel-preset-latest](https://github.com/babel/babel/tree/master/packages/babel-preset-latest) - Babel preset including es2015, es2016, es2017
     - [babel-preset-flow](https://github.com/babel/babel/tree/master/packages/babel-preset-flow) - Babel preset for all Flow plugins
     - [babel-preset-react](https://github.com/babel/babel/tree/master/packages/babel-preset-react) - Babel preset for all React plugins

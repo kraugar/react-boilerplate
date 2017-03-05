@@ -2,14 +2,6 @@
     "env": {
         // Development
         "development": {
-            "plugins": [
-                [
-                    "transform-es2015-modules-commonjs", // Transforms ES2015 modules to CommonJS
-                    {
-                        "loose": true // When in loose mode import and export are allowed to be used anywhere
-                    }
-                ]
-            ],
             "presets": [
                 "flow", // Flow support
                 "stage-2" // Experimental syntax extensions
@@ -40,25 +32,16 @@
                 "react", // Strip flow types and transform JSX
                 "stage-2" // Experimental syntax extensions
             ]
-            //"sourceMaps": true TODO: need here or in webpack?
-            //"comments": false TODO: need here or in webpack?
         },
         // src/server/
         "server": {
             "plugins": [
-                [
-                    "transform-es2015-modules-commonjs", // Transforms ES2015 modules to CommonJS
-                    {
-                        "loose": true // When in loose mode import and export are allowed to be used anywhere
-                    }
-                ],
                 "transform-runtime" // Transforms code to remove the helpers and use the ones in babel-runtime
             ],
             "presets": [
                 "flow", // Flow support
                 "stage-2" // Experimental syntax extensions
-            ],
-            "comments": true // Compile with comments
+            ]
         }
     }
 }
