@@ -6,6 +6,7 @@
     "configurations": [
         {
             "type": "node",
+            "protocol": "inspector",
             "request": "attach",
             "name": "Attach to Process",
             "port": 5858,
