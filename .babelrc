@@ -1,47 +1,23 @@
 {
     "env": {
-        // Development
-        "development": {
-            "presets": [
-                "flow", // Flow support
-                "stage-2" // Experimental syntax extensions
-            ],
-            "sourceMaps": true // Compile with Source Maps
-        },
         // src/__tests__/
-        "test": {
-            "plugins": [
-                "transform-runtime" // Transforms code to remove the helpers and use the ones in babel-runtime
-            ],
-            "presets": [
-                "latest", // All you need to compile what's in ES2015+
-                "flow", // Flow support
-                "react", // Strip flow types and transform JSX
-                "stage-2" // Experimental syntax extensions
-            ],
-            "sourceMaps": true // Compile with Source Maps
-        },
         // src/client/
         "client": {
-            "plugins": [
-                "transform-runtime" // Transforms code to remove the helpers and use the ones in babel-runtime
-            ],
             "presets": [
                 "latest", // All you need to compile what's in ES2015+
                 "flow", // Flow support
                 "react", // Strip flow types and transform JSX
                 "stage-2" // Experimental syntax extensions
-            ]
+            ],
+            "sourceMaps": true // Compile with Source Maps
         },
         // src/server/
         "server": {
-            "plugins": [
-                "transform-runtime" // Transforms code to remove the helpers and use the ones in babel-runtime
-            ],
             "presets": [
                 "flow", // Flow support
                 "stage-2" // Experimental syntax extensions
-            ]
+            ],
+            "sourceMaps": true // Compile with Source Maps
         }
     }
 }
