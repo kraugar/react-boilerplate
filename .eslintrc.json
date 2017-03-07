@@ -162,7 +162,7 @@
         "array-bracket-spacing": ["error", "never", { "singleValue": false, "objectsInArrays": false, "arraysInArrays": false }], // Enforce consistent spacing inside array brackets
         "block-spacing": ["error", "always"], // Enforce consistent spacing inside single-line blocks
         "brace-style": ["error", "1tbs", { "allowSingleLine": true }], // Enforce consistent brace style for blocks
-        "camelcase": ["error", { "properties": "always" }], // Enforce camelcase naming convention
+        "camelcase": "off", // Enforce camelcase naming convention
         "capitalized-comments": "off", // Enforce or disallow capitalization of the first letter of a comment
         "comma-dangle": ["error", "never"], // Require or disallow trailing commas
         "comma-spacing": ["error", { "before": false, "after": true }], // Enforce consistent spacing before and after commas

@@ -1,7 +1,17 @@
 [ignore]
+<PROJECT_ROOT>/build/.*
+<PROJECT_ROOT>/src/__tests__/.*
+<PROJECT_ROOT>/node_modules/stylelint/.*
+<PROJECT_ROOT>/node_modules/eslint/.*
 
 [include]
 
 [libs]
 
 [options]
+# Set this to true and Flow will no longer complain when you use require() with something other than a string literal
+module.ignore_non_literal_requires=true
+# Set this to true if you use a transpiler that adds "use strict"; to the top of every module
+module.use_strict=true
+# Set this to true to have Flow treat underscore-prefixed class properties and methods as private
+munge_underscores=true
