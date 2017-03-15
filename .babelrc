@@ -4,7 +4,7 @@
         // src/client/
         "client": {
             "presets": [
-                "latest", // All you need to compile what's in ES2015+
+                "latest", // All you need to compile what's in ES2015 and above
                 "flow", // Flow support
                 "react", // Strip flow types and transform JSX
                 "stage-2" // Experimental syntax extensions
