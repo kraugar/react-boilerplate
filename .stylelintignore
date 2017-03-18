@@ -1,4 +1,4 @@
 # 'node_modules' ignored by default
 
-# Compiled src (server & client)
-build
+# Compiled client src
+dist

@@ -1,7 +1,7 @@
 # See https://github.com/github/gitignore for collection of useful .gitignore templates
 
-# Compiled src (server & client)
-build
+# Compiled client src
+dist
 
 # Node.js packages
 node_modules
