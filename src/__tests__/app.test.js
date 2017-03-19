@@ -1,6 +1,7 @@
-// Local
+// Local modules
 import { App } from '../client/app/app.js';
 
-test("Check if 'App' name equals 'App'", () => {
+// Just simple test demonstration
+test('Check if App component name === App', () => {
     expect(App.name).toBe('App');
 });
