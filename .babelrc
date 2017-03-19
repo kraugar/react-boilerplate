@@ -1,47 +1,40 @@
 {
     "env": {
-        "test": { // For tests
+        // For tests
+        "test": {
             "presets": [
-                "latest", // All you need to compile what's in ES2015 and above
-                "flow", // Flow support
+                "env", // All you need to compile what's in ES2015 and above
                 "react", // Strip flow types and transform JSX
                 "stage-2" // Experimental syntax extensions
             ],
             "sourceMaps": true // Compile with Source Maps
         },
-        "client:development": { // For client (development)
-            "presets": [
-                "latest", // All you need to compile what's in ES2015 and above
-                "flow", // Flow support
-                "react", // Strip flow types and transform JSX
-                "stage-2" // Experimental syntax extensions
-            ],
-            "sourceMaps": true // Compile with Source Maps
-        },
-        "client:production": { // For client (production)
+        // For development
+        "development": {
             "presets": [
                 [
-                    "latest", // All you need to compile what's in ES2015 and above
+                    "env", // All you need to compile what's in ES2015 and above
                     {
-                        "es2015": { // ES2015 preset
-                            "modules": false // Setting this to false will not transform modules
-                        },
-                        "es2016": { // ES2016 preset
-                            "modules": false // Setting this to false will not transform modules
-                        },
-                        "es2017": { // ES2017 preset
-                            "modules": false // Setting this to false will not transform modules
-                        }
+                        "modules": false // Setting this to false will not transform modules
                     }
                 ],
-                "flow", // Flow support
                 "react", // Strip flow types and transform JSX
                 "stage-2" // Experimental syntax extensions
+            ],
+            "plugins": [
+                "react-hot-loader/babel" // Enables React code to work with HMR
             ]
         },
-        "server": { // For server
+        // For production
+        "production": {
             "presets": [
-                "flow", // Flow support
+                [
+                    "env", // All you need to compile what's in ES2015 and above
+                    {
+                        "modules": false // Setting this to false will not transform modules
+                    }
+                ],
+                "react", // Strip flow types and transform JSX
                 "stage-2" // Experimental syntax extensions
             ]
         }
