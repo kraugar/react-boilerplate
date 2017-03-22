@@ -37,8 +37,6 @@
 
 # Project structure
 
-- `.vscode/` - VS Code workspace settings
-    - `launch.json` - VS Code debug configuration
 - `dist/` - compiled client src
 - `node_modules/` - Node.js packages
 - **`public/`** - static files
