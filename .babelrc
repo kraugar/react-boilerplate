@@ -1,42 +1,60 @@
 {
-    "env": {
-        // For tests
-        "test": {
-            "presets": [
-                "env", // All you need to compile what's in ES2015 and above
-                "react", // Strip flow types and transform JSX
-                "stage-2" // Experimental syntax extensions
-            ],
-            "sourceMaps": true // Compile with Source Maps
-        },
-        // For development
-        "development": {
-            "presets": [
-                [
-                    "env", // All you need to compile what's in ES2015 and above
-                    {
-                        "modules": false // Setting this to false will not transform modules
-                    }
-                ],
-                "react", // Strip flow types and transform JSX
-                "stage-2" // Experimental syntax extensions
-            ],
-            "plugins": [
-                "react-hot-loader/babel" // Enables React code to work with HMR
-            ]
-        },
-        // For production
-        "production": {
-            "presets": [
-                [
-                    "env", // All you need to compile what's in ES2015 and above
-                    {
-                        "modules": false // Setting this to false will not transform modules
-                    }
-                ],
-                "react", // Strip flow types and transform JSX
-                "stage-2" // Experimental syntax extensions
-            ]
-        }
+  "env": {
+    // For tests
+    "test": {
+      "presets": [
+        [
+          "env", // All you need to compile what's in ES2015 and above
+          {
+            "targets": { // Takes an object of environment versions to support
+              "ie": 9 // React parses on ie 9, so we should too
+            },
+            "useBuiltIns": false // A way to apply babel-preset-env for polyfills (via 'babel-polyfill')
+          }
+        ],
+        "react", // Strip flow types and transform JSX
+        "stage-2" // Experimental syntax extensions
+      ],
+      "sourceMaps": true // Compile with Source Maps
+    },
+    // For development
+    "development": {
+      "presets": [
+        [
+          "env", // All you need to compile what's in ES2015 and above
+          {
+            "targets": { // Takes an object of environment versions to support
+              "ie": 9, // React parses on ie 9, so we should too
+              "uglify": true // We currently minify with uglify
+            },
+            "modules": false, // Setting this to false will not transform modules
+            "useBuiltIns": false // A way to apply babel-preset-env for polyfills (via 'babel-polyfill')
+          }
+        ],
+        "react", // Strip flow types and transform JSX
+        "stage-2" // Experimental syntax extensions
+      ],
+      "plugins": [
+        "react-hot-loader/babel" // Enables React code to work with HMR
+      ]
+    },
+    // For production
+    "production": {
+      "presets": [
+        [
+          "env", // All you need to compile what's in ES2015 and above
+          {
+            "targets": { // Takes an object of environment versions to support
+              "ie": 9, // React parses on ie 9, so we should too
+              "uglify": true // We currently minify with uglify
+            },
+            "modules": false, // Setting this to false will not transform modules
+            "useBuiltIns": false // A way to apply babel-preset-env for polyfills (via 'babel-polyfill')
+          }
+        ],
+        "react", // Strip flow types and transform JSX
+        "stage-2" // Experimental syntax extensions
+      ]
     }
+  }
 }
