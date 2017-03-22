@@ -1,5 +1,8 @@
 # See https://github.com/github/gitignore for collection of useful .gitignore templates
 
+# VS Code workspace settings
+.vscode
+
 # Compiled client src
 dist
 
