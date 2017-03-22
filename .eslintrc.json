@@ -1,5 +1,10 @@
 {
-    "extends": ["eslint:all", "plugin:react/all"], // Enables a subset of core rules that report common problems
+    "extends": [ // Enables a subset of core rules that report common problems
+      "eslint:all", // Enable all core rules in the currently installed version of ESLint
+      "plugin:react/all", // Enable all core rules in the currently installed version of React plugin for ESLint
+      "prettier", // Turns off all rules that are unnecessary or might conflict with prettier
+      "prettier/react" // Turns off all rules that are unnecessary or might conflict with prettier
+    ],
     "env": { // An environment defines global variables that are predefined
         "browser": true, // Browser global variables
         "node": true, // Node.js global variables and Node.js scoping
@@ -12,7 +17,7 @@
         "jest": true // Jest global variables
     },
     "parserOptions": { // Allows you to specify the JavaScript language options you want to support
-        "ecmaVersion": 6, // Specify the version of ECMAScript syntax you want to use
+        "ecmaVersion": 2016, // Specify the version of ECMAScript syntax you want to use
         "ecmaFeatures": { // An object indicating which additional language features you’d like to use
             "jsx": true // Enable 'JSX'
         },
@@ -88,7 +93,7 @@
         "no-implicit-coercion": "error", // Disallow the type conversion with shorter notations
         "no-implicit-globals": "error", // Disallow variable and function declarations in the global scope
         "no-implied-eval": "error", // Disallow Implied eval()
-        "no-invalid-this": "off", // Disallow this keywords outside of classes or class-like objects
+        "no-invalid-this": "error", // Disallow this keywords outside of classes or class-like objects
         "no-iterator": "error", // Disallow Iterator
         "no-labels": "error", // Disallow Labeled Statements
         "no-lone-blocks": "error", // Disallow Unnecessary Nested Blocks
@@ -118,7 +123,7 @@
         "no-useless-call": "error", // Disallow unnecessary .call() and .apply()
         "no-useless-concat": "error", // Disallow unnecessary concatenation of strings
         "no-useless-escape": "error", // Disallow unnecessary escape usage
-        "no-useless-return": "off", // Disallow redundant return statements
+        "no-useless-return": "error", // Disallow redundant return statements
         "no-void": "error", // Disallow use of the void operator
         "no-warning-comments": "off", // Disallow Warning Comments
         "no-with": "error", // Disallow with statements
@@ -130,7 +135,7 @@
         "yoda": ["error", "never"], // Require or disallow Yoda Conditions
 
         // Strict Mode - These rules relate to strict mode directives
-        "strict": "off", // Require or disallow strict mode directives
+        "strict": ["error", "never"], // Require or disallow strict mode directives
 
         // Variables - These rules relate to variable declarations
         "init-declarations": "off", // Require or disallow initialization in variable declarations
@@ -139,11 +144,11 @@
         "no-label-var": "error", // Disallow Labels That Are Variables Names
         "no-restricted-globals": ["error", "event"], // Disallow specific global variables
         "no-shadow-restricted-names": "error", // Disallow Shadowing of Restricted Names
-        "no-shadow": "off", // Disallow variable declarations from shadowing variables declared in the outer scope
+        "no-shadow": ["error", { "builtinGlobals": false, "hoist": "all", "allow": [] }], // Disallow variable declarations from shadowing variables declared in the outer scope
         "no-undef-init": "error", // Disallow Initializing to undefined
         "no-undef": ["error", { "typeof": true }], // Disallow Undeclared Variables
         "no-undefined": "error", // Disallow Use of undefined Variable
-        "no-unused-vars": ["warn", { "vars": "all", "args": "none", "caughtErrors": "all" }], // Disallow Unused Variables
+        "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "caughtErrors": "all" }], // Disallow Unused Variables
         "no-use-before-define": ["error", { "functions": true, "classes": true }], // Disallow Early Use
 
         // Node.js and CommonJS - These rules relate to code running in Node.js, or in browsers with CommonJS
@@ -156,7 +161,7 @@
         "no-process-env": "off", // Disallow process.env
         "no-process-exit": "error", // Disallow process.exit()
         "no-restricted-modules": "off", // Disallow Node.js modules
-        "no-sync": "error", // Disallow Synchronous Methods
+        "no-sync": "off", // Disallow Synchronous Methods
 
         // Stylistic Issues - These rules relate to style guidelines, and are therefore quite subjective
         "array-bracket-spacing": ["error", "never", { "singleValue": false, "objectsInArrays": false, "arraysInArrays": false }], // Enforce consistent spacing inside array brackets
@@ -169,15 +174,15 @@
         "comma-style": ["error", "last"], // Enforce consistent comma style
         "computed-property-spacing": ["error", "never"], // Enforce consistent spacing inside computed property brackets
         "consistent-this": ["error", "that"], // Enforce consistent naming when capturing the current execution context
-        "eol-last": "off", // Require or disallow newline at the end of files
+        "eol-last": "error", // Require or disallow newline at the end of files
         "func-call-spacing": ["error", "never"], // Require or disallow spacing between function identifiers and their invocations
         "func-name-matching": ["error", "always"], // Require function names to match the name of the variable or property to which they are assigned
         "func-names": ["error", "as-needed"], // Require or disallow named function expressions
-        "func-style": "off", // Enforce the consistent use of either function declarations or expressions
+        "func-style": ["error", "expression", { "allowArrowFunctions": true }], // Enforce the consistent use of either function declarations or expressions
         "id-blacklist": "off", // Disallow specified identifiers
         "id-length": "off", // Enforce minimum and maximum identifier lengths
         "id-match": "off", // Require identifiers to match a specified regular expression
-        "indent": "off", // Enforce consistent indentation
+        "indent": ["error", 2, { "VariableDeclarator": 3 }], // Enforce consistent indentation
         "jsx-quotes": ["error", "prefer-double"], // Enforce the consistent use of either double or single quotes in JSX attributes
         "key-spacing": ["error", { "beforeColon": false, "afterColon": true, "mode": "strict" }], // Enforce consistent spacing between keys and values in object literal properties
         "keyword-spacing": ["error", { "before": true, "after": true }], // Enforce consistent spacing before and after keywords
@@ -187,16 +192,16 @@
         "lines-around-directive": ["error", "always"], // Require or disallow newlines around directives
         "max-depth": ["error", 2], // Enforce a maximum depth that blocks can be nested
         "max-len": "off", // Enforce a maximum line length
-        "max-lines": "off", // Enforce a maximum number of lines per file
+        "max-lines": ["error", { "max": 300, "skipBlankLines": true, "skipComments": true }], // Enforce a maximum number of lines per file
         "max-nested-callbacks": ["error", 2], // Enforce a maximum depth that callbacks can be nested
         "max-params": "off", // Enforce a maximum number of parameters in function definitions
-        "max-statements-per-line": "off", // Enforce a maximum number of statements allowed per line
+        "max-statements-per-line": ["error", { "max": 1 }], // Enforce a maximum number of statements allowed per line
         "max-statements": "off", // Enforce a maximum number of statements allowed in function blocks
         "multiline-ternary": "off", // Enforce newlines between operands of ternary expressions
-        "new-cap": ["error", { "newIsCap": true, "capIsNew": true }], // Require constructor names to begin with a capital letter
+        "new-cap": ["error", { "newIsCap": true, "capIsNew": false }], // Require constructor names to begin with a capital letter
         "new-parens": "error", // Require parentheses when invoking a constructor with no arguments
-        "newline-after-var": "off", // Require or disallow an empty line after variable declarations
-        "newline-before-return": "off", // Require an empty line before return statements
+        "newline-after-var": ["error", "always"], // Require or disallow an empty line after variable declarations
+        "newline-before-return": "error", // Require an empty line before return statements
         "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 3 }], // Require a newline after each call in a method chain
         "no-array-constructor": "error", // Disallow Array constructors
         "no-bitwise": "error", // Disallow bitwise operators
@@ -214,17 +219,17 @@
         "no-restricted-syntax": "off", // Disallow specified syntax
         "no-tabs": "off", // Disallow all tabs
         "no-ternary": "off", // Disallow ternary operators
-        "no-trailing-spaces": ["error", { "skipBlankLines": true }], // Disallow trailing whitespace at the end of lines
+        "no-trailing-spaces": ["error", { "skipBlankLines": false }], // Disallow trailing whitespace at the end of lines
         "no-underscore-dangle": "off", // Disallow dangling underscores in identifiers
         "no-unneeded-ternary": ["error", { "defaultAssignment": false }], // Disallow ternary operators when simpler alternatives exist
         "no-whitespace-before-property": "error", // Disallow whitespace before properties
         "object-curly-newline": "off", // Enforce consistent line breaks inside braces
-        "object-curly-spacing": "off", // Enforce consistent spacing inside braces
+        "object-curly-spacing": ["error", "always", { "arraysInObjects": true, "objectsInObjects": true }], // Enforce consistent spacing inside braces
         "object-property-newline": "off", // Enforce placing object properties on separate lines
         "one-var-declaration-per-line": "off", // Require or disallow newlines around variable declarations
         "one-var": "off", // Enforce variables to be declared either together or separately in functions
         "operator-assignment": ["error", "always"], // Require or disallow assignment operator shorthand where possible
-        "operator-linebreak": ["error", "after"], // Enforce consistent linebreak style for operators
+        "operator-linebreak": "off", // Enforce consistent linebreak style for operators
         "padded-blocks": "off", // Require or disallow padding within blocks
         "quote-props": ["error", "as-needed"], // Require quotes around object literal property names
         "quotes": ["error", "single", { "avoidEscape": true }], // Enforce the consistent use of either backticks, double, or single quotes
@@ -234,18 +239,18 @@
         "sort-keys": "off", // Require object keys to be sorted
         "sort-vars": "off", // Require variables within the same declaration block to be sorted
         "space-before-blocks": ["error", "always"], // Enforce consistent spacing before blocks
-        "space-before-function-paren": "off", // Enforce consistent spacing before function definition opening parenthesis
+        "space-before-function-paren": ["error", "never"], // Enforce consistent spacing before function definition opening parenthesis
         "space-in-parens": ["error", "never"], // Enforce consistent spacing inside parentheses
         "space-infix-ops": "error", // Require spacing around infix operators
         "space-unary-ops": ["error", { "words": true, "nonwords": false }], // Enforce consistent spacing before or after unary operators
         "spaced-comment": "off", // Enforce consistent spacing after the // or /* in a comment
         "template-tag-spacing": ["error", "never"], // Require or disallow spacing between template tags and their literals
-        "unicode-bom": "off", // Require or disallow Unicode byte order mark (BOM)
+        "unicode-bom": ["error", "never"], // Require or disallow Unicode byte order mark (BOM)
         "wrap-regex": "error", // Require parenthesis around regex literals
 
         // ECMAScript 6 - These rules relate to ES6, also known as ES2015
         "arrow-body-style": "off", // Require braces around arrow function bodies
-        "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }], // Require parentheses around arrow function arguments
+        "arrow-parens": ["error", "as-needed", { "requireForBlockBody": false }], // Require parentheses around arrow function arguments
         "arrow-spacing": ["error", { "before": true, "after": true }], // Enforce consistent spacing before and after the arrow in arrow functions
         "constructor-super": "error", // Require super() calls in constructors
         "generator-star-spacing": ["error", {"before": false, "after": true}], // Enforce consistent spacing around * operators in generator functions
@@ -257,14 +262,14 @@
         "no-new-symbol": "error", // Disallow new operators with the Symbol object
         "no-restricted-imports": "off", // Disallow specified modules when loaded by import
         "no-this-before-super": "error", // Disallow this/super before calling super() in constructors
-        "no-useless-computed-key": "off", // Disallow unnecessary computed property keys in object literals
-        "no-useless-constructor": "off", // Disallow unnecessary constructors
+        "no-useless-computed-key": "error", // Disallow unnecessary computed property keys in object literals
+        "no-useless-constructor": "error", // Disallow unnecessary constructors
         "no-useless-rename": "error", // Disallow renaming import, export, and destructured assignments to the same name
         "no-var": "error", // Require let or const instead of var
         "object-shorthand": ["error", "always"], // Require or disallow method and property shorthand syntax for object literals
         "prefer-arrow-callback": "error", // Require arrow functions as callbacks
         "prefer-const": "error", // Require const declarations for variables that are never reassigned after declared,
-        "prefer-destructuring": ["error", { "array": true, "object": true }, { "enforceForRenamedProperties": true }], // Require destructuring from arrays and/or objects
+        "prefer-destructuring": "off", // Require destructuring from arrays and/or objects
         "prefer-numeric-literals": "error", // Disallow parseInt() in favor of binary, octal, and hexadecimal literals
         "prefer-rest-params": "error", // Require rest parameters instead of arguments
         "prefer-spread": "error", // Require spread operators instead of .apply()
@@ -279,7 +284,9 @@
         // React
         "react/display-name": "off", // Prevent missing displayName in a React component definition
         "react/forbid-component-props": "error", // Forbid certain props on Components
+        "react/forbid-elements": "off", // Forbid certain elements
         "react/forbid-prop-types": "error", // Forbid certain propTypes
+        "react/forbid-foreign-prop-types": "error", // Forbid foreign propTypes
         "react/no-array-index-key": "error", // Prevent using Array index in key props
         "react/no-children-prop": "error", // Prevent passing children as props
         "react/no-danger": "error", // Prevent usage of dangerous JSX properties
@@ -299,7 +306,7 @@
         "react/no-unused-prop-types": "error", // Prevent definitions of unused prop types
         "react/prefer-es6-class": ["error", "always"], // Enforce ES5 or ES6 class for React Components
         "react/prefer-stateless-function": "off", // Enforce stateless React Components to be written as a pure function
-        "react/prop-types": "off", // Prevent missing props validation in a React component definition
+        "react/prop-types": "error", // Prevent missing props validation in a React component definition
         "react/react-in-jsx-scope": "off", // Prevent missing React when using JSX
         "react/require-default-props": "error", // Enforce a defaultProps definition for every prop that is not a required prop
         "react/require-optimization": "off", // Enforce React components to have a shouldComponentUpdate method
@@ -308,14 +315,15 @@
         "react/sort-comp": "off", // Enforce component methods order
         "react/sort-prop-types": "off", // Enforce propTypes declarations alphabetical sorting
         "react/style-prop-object": "error", // Enforce style prop value being an object
+        "react/void-dom-elements-no-children": "error", // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
 
         // JSX-specific rules
         "react/jsx-boolean-value": "off", // Enforce boolean attributes notation in JSX (fixable)
         "react/jsx-closing-bracket-location": "error", // Validate closing bracket location in JSX (fixable)
-        "react/jsx-curly-spacing": "off", // Enforce or disallow spaces inside of curly braces in JSX attributes (fixable)
-        "react/jsx-equals-spacing": "off", // Enforce or disallow spaces around equal signs in JSX attributes (fixable)
+        "react/jsx-curly-spacing": ["error", "never", { "allowMultiline": false }], // Enforce or disallow spaces inside of curly braces in JSX attributes (fixable)
+        "react/jsx-equals-spacing": ["error", "never"], // Enforce or disallow spaces around equal signs in JSX attributes (fixable)
         "react/jsx-filename-extension": "off", // Restrict file extensions that may contain JSX
-        "react/jsx-first-prop-new-line": "off", // Enforce position of the first prop in JSX (fixable)
+        "react/jsx-first-prop-new-line": ["error", "never"], // Enforce position of the first prop in JSX (fixable)
         "react/jsx-handler-names": "error", // Enforce event handler naming conventions in JSX
         "react/jsx-indent": "off", // Validate JSX indentation (fixable)
         "react/jsx-indent-props": "off", // Validate props indentation in JSX (fixable)
@@ -329,7 +337,7 @@
         "react/jsx-no-undef": "error", // Disallow undeclared variables in JSX
         "react/jsx-pascal-case": "error", // Enforce PascalCase for user-defined JSX components
         "react/jsx-sort-props": "off", // Enforce props alphabetical sorting
-        "react/jsx-space-before-closing": "off", // Validate spacing before closing bracket in JSX (fixable)
+        "react/jsx-space-before-closing": ["error", "always"], // Validate spacing before closing bracket in JSX (fixable)
         "react/jsx-tag-spacing": "error", // Validate whitespace in and around the JSX opening and closing brackets (fixable)
         "react/jsx-uses-react": "error", // Prevent React to be incorrectly marked as unused
         "react/jsx-uses-vars": "error", // Prevent variables used in JSX to be incorrectly marked as unused
